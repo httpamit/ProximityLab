@@ -12,14 +12,6 @@ import {
 } from "recharts";
 
 export default function Graph({ data }) {
-  const airQualityLabel = [
-    "Good",
-    "Satisfactory",
-    "Moderate",
-    "Poor",
-    "Very-poor",
-    "Severe",
-  ];
 
   // Fill bar color
   const barColor = (value) => {

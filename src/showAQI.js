@@ -5,7 +5,6 @@ import TableView from "./Components/TableView";
 
 const ShowAQI = () => {
   const [data, setData] = useState([]);
-  const [isLoadin, setLoading] = useState(false);
   const [isTableView, setTableView] = useState(true);
   useEffect(() => {
     const ws = new WebSocket("ws://city-ws.herokuapp.com/‌");

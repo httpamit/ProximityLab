@@ -6,7 +6,7 @@ export default function Header() {
     <div>
       <Navbar fixed="top" bg="dark">
         <Container>
-          <a className="logo" href="#">
+          <a className="logo" href="https://www.proximitylab.com/">
             Proximity Lab
           </a>
         </Container>
