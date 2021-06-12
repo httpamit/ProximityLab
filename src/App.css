@@ -1,17 +1,28 @@
-.App {
-  text-align: center;
-}
+body { font-size: 16px; }
+.main-container { text-align: center; width: 70%; margin: 0 auto; }
+.logo { color: #fff; cursor: pointer; text-decoration: none; font-size: 18px; text-transform: uppercase; }
+.table-container { border: 1px solid #fafafa; }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.logo:hover { color: #fff; text-decoration: none; }
+.good { background: #55A84E; }
+.satisfactory { background: #A3C853; }
+.moderate { background: #FFF832; }
+.poor { background: #F29C32; }
+.very-poor { background: #E93F33; }
+.severe { background: #AF2D24; }
+.jumbotron { padding: 1rem; background: #fafafa; margin: 40px 0 20px 0; }
+.uppercase {text-transform: uppercase;}
+.bar-wrapper {margin: 20px 0;}
+.mobile-only {display: none;}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+tr {border: 0;}
+th {border: 0 !important; background: #fafafa !important; padding: 5px 20px !important;}
+td {color: #000; border: 0 !important; padding: 5px 20px !important;}
+td.capitalize {text-transform: capitalize;}
+.table-container table {margin: 0 0 30px 0;}
+.custom-tooltip {font-size: 12px; padding: 5px;}
+.custom-tooltip p {margin: 0;}
+.toggle-btn {max-width: 150px; font-size: 14px; margin: 0 auto;}
 
 .App-header {
   background-color: #282c34;
@@ -24,8 +35,21 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  .main-container {
+    width: 100%;
+  }
+  .bar-wrapper {
+    padding-left: 0px;
+    margin-left: -10px;
+  }
+  .recharts-layer.xAxis {
+    display: none;
+  }
+  .mobile-only {display: block;}
 }
 
 @keyframes App-logo-spin {
