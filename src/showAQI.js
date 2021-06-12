@@ -7,7 +7,7 @@ const ShowAQI = () => {
   const [data, setData] = useState([]);
   const [isTableView, setTableView] = useState(true);
   useEffect(() => {
-    const ws = new WebSocket("ws://city-ws.herokuapp.com/‌");
+    const ws = new WebSocket("wss://city-ws.herokuapp.com/‌");
 
     ws.onmessage = (event) => {
       const response = JSON.parse(event.data);
