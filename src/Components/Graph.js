@@ -37,9 +37,9 @@ export default function Graph({ data }) {
           className="custom-tooltip"
           style={{ background: barColor(Math.round(payload[0].value)) }}
         >
-          <p className="label">{`${label} : ${Math.round(
-            payload[0].value
-          )}`}</p>
+          <p className="label">{`${label} : ${
+            payload[0].value.toFixed(2)
+            }`}</p>
           <p className="desc">
             {Math.round(payload[0].value) <= 50
               ? "Air quality is good"
