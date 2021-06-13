@@ -1,12 +1,18 @@
+import React, {useState} from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Header from "./Components/Header";
 import MainBanner from "./Components/MainBanner";
+import Loader from "./Components/Loader";
 import ShowAQI from "./showAQI";
 
 function App() {
+const [isLoading, setLoadin] = useState(true)
+setTimeout(() => { setLoadin(false); }, 3000);
+
   return (
     <div>
+      {isLoading && <Loader />}
       <Header />
       <MainBanner />
       <div className="main-container">

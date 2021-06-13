@@ -14,6 +14,7 @@ body { font-size: 16px; }
 .uppercase {text-transform: uppercase;}
 .bar-wrapper {margin: 20px 0;}
 .mobile-only {display: none;}
+.loader {width: 100%; height: 100%; position: fixed; z-index: 2; background: #fff; display: flex; justify-content: center;align-items: center;}
 
 tr {border: 0;}
 th {border: 0 !important; background: #fafafa !important; padding: 5px 20px !important;}
@@ -47,7 +48,7 @@ td.capitalize {text-transform: capitalize;}
     margin-left: -10px;
   }
   .recharts-layer.xAxis {
-    display: none;
+    display: none;  
   }
   .mobile-only {display: block;}
 }
