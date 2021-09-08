@@ -6,8 +6,8 @@ export default function Header() {
     <div>
       <Navbar fixed="top" bg="dark">
         <Container>
-          <a className="logo" href="https://www.proximitylab.com/">
-            Proximity Lab
+          <a className="logo" href="javascript:;">
+            Real time
           </a>
         </Container>
       </Navbar>
